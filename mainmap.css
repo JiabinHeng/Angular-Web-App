@@ -1,0 +1,106 @@
+html { height: 100%; margin: 0;margin: 0; padding: 0}
+body { height: 100%; width: 100%; margin: 0; padding: 0}
+#main {
+	height:100%;
+	width:100%;
+}
+#header{
+	height:8%;
+	width:100%;
+	top:0px;
+}
+
+#maincanvas{
+	height:84%;
+	width:100%;
+}
+
+#map {
+	position:relative;
+    height:100%;
+    width:70%;
+    float:left;
+}
+#infopanel {
+	position:relative;
+	height:100%;
+    width:30%;
+    float:right;
+}
+#infopanel a {
+	position:relative;
+	width:100%;
+	text-align: middle;
+}
+
+#class{
+	width:100%;
+	background-color:#4a3144;
+	padding-bottom:1px;
+	padding-top:1px;
+}
+
+#class a {
+	color:#ffffff;
+}
+
+.infoWindowContent {
+    font-size:  14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+#footer{
+	height:8%;
+	width:100%;
+	bottom:0px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100%;
+  text-align: center;
+  background-color: #4a3144;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  /*max-width: 680px;*/
+  padding: 0 15px;
+}
+
+.navbar{
+  background-color: #4a3144;
+  height:100%;
+}
+
+.nav-link{
+	color:#ffffff !important;
+}
+
+.navbar-nav .nav-item{
+   margin:0 20px 0 0;   
+}
+.navbar-brand {
+   margin:0 50px 0 0;
+   height:100%;
+   color:#ffffff !important; 
+}
+.navbar-brand img{
+	background-color:white;
+	max-width:100%;
+    max-height:100%;
+    /*width:30px;*/
+    margin:auto;
+}
+.dropdown-menu a {
+	color:#4a3144;
+}
