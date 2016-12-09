@@ -21,12 +21,7 @@
         <div id="header" ng-include="'views/header.html'"></div>
         <div id="maincanvas">
             <div id="map"></div>
-            <div id="infopanel">
-              <a>Information Panel</a>
-              <button id="class" class="btn btn-default" ng-repeat="marker in markers | orderBy : 'title'" ng-click="openInfoWindow($event, marker)">
-                 <a>{{marker.title}}</a>
-              </button>              
-            </div>
+            <div id="infopanel" ng-include="'views/infopanel.html'"></div>
         </div>
         <div id="footer" ng-include="'views/footer.html'"></div>
     </div>
