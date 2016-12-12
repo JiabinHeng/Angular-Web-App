@@ -32,9 +32,34 @@ var cities = [
     }
 ];
 
+var app = angular.module("mapsApp", ["ngRoute"]);
+
+// Define page routing
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "templates/home.html",
+        controller: 'MapCtrl'
+    })
+    .when("/link1", {
+        templateUrl : "templates/link1.html"
+    })
+    .when("/link2", {
+        templateUrl : "templates/link2.html"
+    })
+    .when("/dropdown1", {
+        templateUrl : "templates/dropdown/dropdown1.html"
+    })
+    .when("/dropdown2", {
+        templateUrl : "templates/dropdown/dropdown2.html"
+    })
+    .when("/dropdown3", {
+        templateUrl : "templates/dropdown/dropdown3.html"
+    });
+});
+
 //Angular App Module and Controller
-angular.module('mapsApp', [])
-.controller('MapCtrl', function ($scope) {
+app.controller('MapCtrl', function ($scope) {
 
     var mapOptions = {
         zoom: 4,
@@ -76,3 +101,6 @@ angular.module('mapsApp', [])
     }
 
 });
+
+
+

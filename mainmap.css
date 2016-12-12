@@ -73,7 +73,7 @@ body { height: 100%; width: 100%; margin: 0; padding: 0}
 .navbar-brand {
    margin:0 0 0 0;
    height:100%;
-   width:25%;
+   width:300px;
    float:left;
    color:#ffffff !important; 
 }
@@ -92,7 +92,6 @@ body { height: 100%; width: 100%; margin: 0; padding: 0}
 
 #navbar-link ul{
   height:100%;
-  margin-left:5%;
 }
 
 .nav-link{
@@ -110,7 +109,7 @@ body { height: 100%; width: 100%; margin: 0; padding: 0}
 }
 
 .navbar-nav .nav-item{
-   margin:0 5% 0 0; 
+   margin:0 80px 0 0; 
    height:100%;  
 }
 
@@ -154,3 +153,27 @@ body { height: 100%; width: 100%; margin: 0; padding: 0}
   vertical-align: middle;
 }
 
+.infopage {
+  height:100%;
+  width:100%;
+}
+
+#link1 {
+  background-color: red;
+}
+
+#link2 {
+  background-color: blue;
+}
+
+#dropdown1 {
+  background-color: yellow;
+}
+
+#dropdown2 {
+  background-color: green;
+}
+
+#dropdown3 {
+  background-color: purple;
+}
