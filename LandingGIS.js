@@ -1,5 +1,4 @@
-
-var app = angular.module("mapsApp", ["ngRoute"]);
+var app = angular.module("mapsApp", ["ngRoute","esri.map"]);
 
 // Define page routing
 app.config(function($routeProvider) {
