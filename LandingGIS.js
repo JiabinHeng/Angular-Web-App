@@ -1,12 +1,10 @@
-var app = angular.module("mapsApp", ["ngRoute","esri.map"]);
+var app = angular.module("mapsApp", ["ngRoute","esri.map",'multiselect-searchtree']);
 
 // Define page routing
 app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
-        templateUrl : "templates/home.html",
-        controller: 'MapCtrl',
-        controllerAs:'MapCtrl'
+        templateUrl : "templates/home.html"
     })
     .when("/link1", {
         templateUrl : "templates/link1.html"

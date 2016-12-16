@@ -1,12 +1,20 @@
-<esri-map-view map="MapCtrl.map" 
-    view-options="{
-        extent: {
-            xmin: -9177811,
-            ymin: 4247000,
-            xmax: -9176791,
-            ymax: 4247784,
-            spatialReference: 102100
-        }
-    }">
-</esri-map-view>
+<div id="map" ng-controller="MapCtrl as MC">
+	<esri-map-view map="MC.map" 
+	    view-options="{
+	        extent: {
+	            xmin: -9177811,
+	            ymin: 4247000,
+	            xmax: -9176791,
+	            ymax: 4247784,
+	            spatialReference: 102100
+	        }
+	    }">
+	</esri-map-view>
+</div>
+<div id="sliderControl" ng-controller="SliderCtrl">
+	<!--<span class="glyphicon" ng-class="{'glyphicon-minus': item.isExpanded, 'glyphicon-plus': !item.isExpanded}" ng-click=\"onExpandClicked(item, $event)"></span>-->
+	<button type="button" data-toggle="tooltip" title="{{button.tooltip}}" class="btn btn-default" ng-click="changeStatus()">
+		<span class="glyphicon glyphicon-minus" ng-class="{'glyphicon-resize-small': !button.clicked, 'glyphicon-resize-full': button.clicked}"></span>
+	</button>
+</div>
 <div id="infopanel" ng-include="'views/infopanel.html'"></div>

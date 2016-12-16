@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>-->
+<link rel="stylesheet" href="dist/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="mainmap.css" type="text/css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="dist/angular-multiselectsearchtree/dist/kjvelarde-multiselect-searchtree-0.9.0.min.css">
+
 <!-- http://energy.stone-env.net/ -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
@@ -8,19 +16,20 @@
 <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDEvQGhEUR6npaXQCdVqAdw9ZiKJKA2qho"></script>
 
 <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-<script src="dist/js/bootstrap.min.js"></script>
+<script src="dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+
 <script src="https://js.arcgis.com/4.1/"></script>
 <script src="//unpkg.com/angular-esri-map@2"></script>
 
-
-<link rel="stylesheet" href="dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="mainmap.css" type="text/css">
-<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script type="text/javascript" src="dist/angular-multiselectsearchtree/dist/kjvelarde-multiselect-searchtree-0.9.0.min.js"></script>
+<script type="text/javascript" src="dist/angular-multiselectsearchtree/dist/kjvelarde-multiselect-searchtree-0.9.0.tpl.js"></script>
 
 <script src="LandingGIS.js" type="text/javascript"></script>
 <script src="controllers/mainmap_Controller.js" type="text/javascript"></script>
+<!--<script src="controllers/infopanel_Controller.js" type="text/javascript"></script>-->
+<script src="controllers/searchtree_Controller.js" type="text/javascript"></script>
+<script src="controllers/slider_Controller.js" type="text/javascript"></script>
 
 </head>
 <body ng-app="mapsApp">

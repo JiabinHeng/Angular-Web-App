@@ -1,4 +1,7 @@
-<a>Information Panel</a>
-<button id="class" class="btn btn-default" ng-repeat="marker in markers | orderBy : 'title'" ng-click="openInfoWindow($event, marker)">
- <a>{{marker.title}}</a>
-</button>              
+<div style="height:100%;width:100%" ng-controller="SearchtreeCtrl">
+	<p>Data Browser</p>
+	<multiselect-searchtree style="height:100%;width:100%" data-input-model="data" multi-select="true" data-output-model="selectedItem2" data-callback="CustomCallback(item, selectedItems)" data-select-only-leafs="false" extra-buttons="true"></multiselect-searchtree>  
+	<div class="label label-primary">
+		{{selectedItem2}}
+	</div>      
+</div>
